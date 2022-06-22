@@ -1,0 +1,51 @@
+$layout-breakpoint-small: 760px;
+$layout-breakpoint-mobile: 460px;
+
+.container {
+  width: 100%;
+  height: auto;
+  color: var(--text-primary);
+}
+
+.description {
+  display: grid;
+  row-gap: 0.625rem;
+
+  h1,
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
+  strong {
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 3.375rem;
+  }
+}
+
+@keyframes Moving {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 15px);
+  }
+  100% {
+    transform: translate3d(10px, -20px, 0);
+  }
+}
+
+.photo {
+  width: 30vw;
+  max-width: 100%;
+  height: auto;
+  animation: Moving 4s linear 3.9s infinite alternate;
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  .photo {
+    display: none;
+  }
+}
