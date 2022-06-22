@@ -1,0 +1,47 @@
+$layout-breakpoint-small: 760px;
+
+.menuMobile {
+  display: none;
+}
+
+.buttonToggle {
+  position: relative;
+  z-index: 999;
+}
+
+.navMenu {
+  position: absolute;
+  inset: 0px;
+  max-width: 80vw;
+  margin-left: auto;
+  padding: 2.5rem;
+  background-color: var(--background-secondary);
+  z-index: 456;
+
+  > ul {
+    height: auto;
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  ul li a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: color 400ms linear;
+
+    &:hover {
+      color: var(--text-primary);
+    }
+  }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  .menuMobile {
+    display: block;
+  }
+
+  .buttonToggle {
+    top: 0.312rem;
+  }
+}
