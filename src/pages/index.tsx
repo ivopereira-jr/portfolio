@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
           <a
             className={`link ${styles.linkDownloadCv}`}
-            href=""
+            href="https://github.com/ivopereira-jr/portfolio/raw/main/.github/ivo-pereira.pdf"
             target="_blank"
           >
             Download CV
