@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
+import { Header } from './Header';
+
 interface LayoutProps {
   title: string;
   children: ReactNode;
@@ -13,6 +15,8 @@ export function Layout({ title, children }: LayoutProps) {
       <Head>
         <title>{title}</title>
       </Head>
+
+      <Header />
 
       <motion.main
         layout

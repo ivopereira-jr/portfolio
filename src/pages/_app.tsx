@@ -3,8 +3,6 @@ import type { AppProps } from 'next/app';
 import NextNProgress from 'nextjs-progressbar';
 import { AnimatePresence } from 'framer-motion';
 
-import { Header } from '../components/Header';
-
 import '../styles/globals.scss';
 
 function App({ Component, pageProps }: AppProps) {
@@ -13,8 +11,6 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-
-      <Header />
 
       <NextNProgress
         color="#2d99ff"
