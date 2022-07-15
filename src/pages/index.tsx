@@ -19,9 +19,18 @@ const Home: NextPage = () => {
               height={28}
             />
             , eu sou
+            <br />
+            <strong>Ivo Pereira</strong>
           </h1>
-          <strong>Ivo Pereira</strong>
           <h2>Desenvolvedor Front-end.</h2>
+
+          <a
+            className={`link ${styles.linkDownloadCv}`}
+            href=""
+            target="_blank"
+          >
+            Download CV
+          </a>
         </div>
 
         <div className={styles.photo}>

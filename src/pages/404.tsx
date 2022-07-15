@@ -28,7 +28,9 @@ const Custom404: NextPage = () => {
           início
         </h1>
 
-        <Link href="/">Voltar ao inicio</Link>
+        <Link href="/">
+          <a className="link">Voltar ao inicio</a>
+        </Link>
       </main>
     </>
   );
