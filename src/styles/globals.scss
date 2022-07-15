@@ -21,6 +21,7 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialised;
   text-rendering: optimizeLegibility;
+  color: var(--text-primary);
   background-color: var(--background-primary);
   overflow: hidden;
   scroll-behavior: smooth;
@@ -100,9 +101,8 @@ button {
   padding: 0 1rem;
 }
 
-.paddingContainerContent {
+.marginMainContent {
   margin: 3.875rem auto;
-  padding: 0 1rem;
 }
 
 .navigation-underline {
@@ -127,12 +127,11 @@ button {
 }
 
 @media (min-width: 1280px) {
-  .container,
-  .paddingContainerContent {
+  .container {
     padding: 0 2rem;
   }
 
-  .paddingContainerContent {
+  .marginMainContent {
     margin: 5rem auto;
   }
 }

@@ -5,9 +5,9 @@ import { Layout } from '../components/Layout';
 const sobre: NextPage = () => {
   return (
     <Layout title="Sobre | Portfólio Ivo Pereira">
-      <h1>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+      <div className="placeItemsCenter">
+        <h2>🚧 Esta pagina esta em desenvolvimento 🚧</h2>
+      </div>
     </Layout>
   );
 };
